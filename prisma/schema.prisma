@@ -6,15 +6,16 @@ generator client {
 }
 
 datasource db {
-    provider = "mongodb"
+    provider = "sqlite"
     // NOTE: When using mysql or sqlserver, uncomment the @db.Text annotations in model Account below
     // Further reading:
+    // https://next-auth.js.org/adapters/prisma#create-the-prisma-schema
     // https://www.prisma.io/docs/reference/api-reference/prisma-schema-reference#string
-    url      = env("MONGODB_URI")
+    url      = env("DATABASE_URL")
 }
 
 model todo {
-    id        String   @id @default(auto()) @map("_id") @db.ObjectId
+    id        String   @id @default(cuid())
     text      String?
     completed Boolean?
 }

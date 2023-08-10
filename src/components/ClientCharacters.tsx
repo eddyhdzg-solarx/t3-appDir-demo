@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { trpc } from "~/client/trpc";
+import { trpc } from "~/client";
 
 export function ClientCharacters() {
   const {
