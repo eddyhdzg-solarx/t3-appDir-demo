@@ -5,6 +5,7 @@ specifiers:
   '@prisma/client': ^5.1.1
   '@t3-oss/env-nextjs': ^0.3.1
   '@tanstack/react-query': ^4.29.25
+  '@tanstack/react-query-devtools': ^4.32.6
   '@trpc/client': ^10.34.0
   '@trpc/next': ^10.34.0
   '@trpc/react-query': ^10.34.0
@@ -37,6 +38,7 @@ dependencies:
   '@prisma/client': 5.1.1_prisma@5.1.1
   '@t3-oss/env-nextjs': 0.3.1_zno6rcmvi3mruj4xg7lanqhjom
   '@tanstack/react-query': 4.32.6_biqbaboplfbrettd7655fr4n2y
+  '@tanstack/react-query-devtools': 4.32.6_63vu67xuxoq6fpthi5yrhm543u
   '@trpc/client': 10.37.1_@trpc+server@10.37.1
   '@trpc/next': 10.37.1_74vb74nzvd43j6qo47u2ofvyia
   '@trpc/react-query': 10.37.1_osxhw6t56wwgdftg5wod3rvjuy
@@ -350,8 +352,30 @@ packages:
       zod: 3.21.4
     dev: false
 
+  /@tanstack/match-sorter-utils/8.8.4:
+    resolution: {integrity: sha512-rKH8LjZiszWEvmi01NR72QWZ8m4xmXre0OOwlRGnjU01Eqz/QnN+cqpty2PJ0efHblq09+KilvyR7lsbzmXVEw==}
+    engines: {node: '>=12'}
+    dependencies:
+      remove-accents: 0.4.2
+    dev: false
+
   /@tanstack/query-core/4.32.6:
     resolution: {integrity: sha512-YVB+mVWENQwPyv+40qO7flMgKZ0uI41Ph7qXC2Zf1ft5AIGfnXnMZyifB2ghhZ27u+5wm5mlzO4Y6lwwadzxCA==}
+    dev: false
+
+  /@tanstack/react-query-devtools/4.32.6_63vu67xuxoq6fpthi5yrhm543u:
+    resolution: {integrity: sha512-Gd9pBkm2sbeze9P5Yp8R7y0rZVUdoIOhduomDjz138WdJuVbRS4Y8p6gX2uMJFsUFVe7jA6fX/D6NfQ9o5OS/A==}
+    peerDependencies:
+      '@tanstack/react-query': ^4.32.6
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@tanstack/match-sorter-utils': 8.8.4
+      '@tanstack/react-query': 4.32.6_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      superjson: 1.13.1
+      use-sync-external-store: 1.2.0_react@18.2.0
     dev: false
 
   /@tanstack/react-query/4.32.6_biqbaboplfbrettd7655fr4n2y:
@@ -2445,6 +2469,10 @@ packages:
       define-properties: 1.2.0
       functions-have-names: 1.2.3
     dev: true
+
+  /remove-accents/0.4.2:
+    resolution: {integrity: sha512-7pXIJqJOq5tFgG1A2Zxti3Ht8jJF337m4sowbuHsW30ZnkQFnDzy9qBNhgzX8ZLW4+UBcXiiR7SwR6pokHsxiA==}
+    dev: false
 
   /resolve-from/4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
