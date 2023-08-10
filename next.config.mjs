@@ -20,6 +20,9 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  images: {
+    domains: ["rickandmortyapi.com"],
+  },
 };
 
 export default config;

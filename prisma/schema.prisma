@@ -13,6 +13,8 @@ datasource db {
     url      = env("MONGODB_URI")
 }
 
-model Todo {
-    id String @id @default(auto()) @map("_id") @db.ObjectId
+model todo {
+    id        String   @id @default(auto()) @map("_id") @db.ObjectId
+    text      String?
+    completed Boolean?
 }
